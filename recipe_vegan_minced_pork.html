@@ -1,246 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
-        <title>Kochwelt</title>
-        <link
-            rel="icon"
-            type="image/x-icon"
-            href="./assets/img/logo_small.png"
-        />
-        <script src="./shared/scripts/responsive_menu.js" defer></script>
-        <script src="./scripts/main.js" defer></script>
-        <script src="./scripts/recipe_calculator.js" defer></script>
-        <link rel="stylesheet" href="./shared/styles/color.css" />
-        <link rel="stylesheet" href="./styles/recipe.css" />
-        <link rel="stylesheet" href="./shared/styles/style.css" />
-        <link rel="stylesheet" href="./shared/styles/responsive.css" />
-    </head>
-    <body>
-        <header id="start">
-            <div class="top-logo-div">
-                <a href="#start"
-                    ><img src="./assets/img/logo.png" alt="Kochwelt-Logo"
-                /></a>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
+    <title>Kochwelt</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/logo_small.png" />
+    <script src="./shared/scripts/responsive_menu.js" defer></script>
+    <script src="./scripts/main.js" defer></script>
+    <script src="./scripts/recipe_calculator.js" defer></script>
+    <link rel="stylesheet" href="./shared/styles/color.css" />
+    <link rel="stylesheet" href="./styles/recipe.css" />
+    <link rel="stylesheet" href="./shared/styles/style.css" />
+    <link rel="stylesheet" href="./shared/styles/responsive.css" />
+</head>
+
+<body>
+    <header id="start">
+        <div class="top-logo-div">
+            <a href="#start"><img src="./assets/img/logo.png" alt="Kochwelt-Logo" /></a>
+        </div>
+        <nav>
+            <a href="./index.html" class="nav-link">Start</a>
+            <a href="./recipe_vegan_minced_pork.html" class="nav-link nav-link-recipe-of-the-day youAreHere">Rezept des
+                Tages</a>
+            <a href="./contact.html" class="nav-link">Kontakt</a>
+            <a href="./impressum.html" class="nav-link">Impressum</a>
+        </nav>
+        <div id="burger-icon-btn" class="burgerbutton_clickable d_none" onclick="toggleElement()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div id="responsive-nav-links" class="burger-nav-links burger-nav-links-closed">
+            <a href="./index.html" class="nav-link">Start</a>
+            <a href="./recipe_vegan_minced_pork.html"
+                class="nav-link responsive-nav-link-recipe-of-the-day youAreHere">Rezept des Tages</a>
+            <a href="./contact.html" class="nav-link">Kontakt</a>
+            <a href="./impressum.html" class="nav-link">Impressum</a>
+        </div>
+    </header>
+    <main class="main-content">
+        <section class="title-section">
+            <h2>Veganes Mett</h2>
+            <img class="preview-img" src="./assets/img/mett.jpg" alt="Foto von Brötchen mit veganem Mett" />
+        </section>
+        <section class="info-section">
+            <div class="info-container">
+                <img class="info-icon" src="./assets/icons/clock-regular.svg" alt="Uhr-Icon" />
+                <span>
+                    30 Min. Vorbereitung + mehrere Stunden Wartezeit</span>
             </div>
-            <nav>
-                <a href="./index.html" class="nav-link">Start</a>
-                <a
-                    href="./recipe_vegan_minced_pork.html"
-                    class="nav-link nav-link-recipe-of-the-day youAreHere"
-                    >Rezept des Tages</a
-                >
-                <a href="./contact.html" class="nav-link">Kontakt</a>
-                <a href="./impressum.html" class="nav-link">Impressum</a>
-            </nav>
-            <div
-                id="burger-icon-btn"
-                class="burgerbutton_clickable d_none"
-                onclick="toggleElement()"
-            >
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
+            <div class="info-container">
+                <img class="info-icon" src="./assets/icons/brain-solid.svg" alt="Gehirn-Icon" />
+                <span> einfach</span>
             </div>
-            <div
-                id="responsive-nav-links"
-                class="burger-nav-links burger-nav-links-closed"
-            >
-                <a href="./index.html" class="nav-link">Start</a>
-                <a
-                    href="./recipe_vegan_minced_pork.html"
-                    class="nav-link responsive-nav-link-recipe-of-the-day youAreHere"
-                    >Rezept des Tages</a
-                >
-                <a href="./contact.html" class="nav-link">Kontakt</a>
-                <a href="./impressum.html" class="nav-link">Impressum</a>
+            <div class="info-container">
+                <img class="info-icon" src="./assets/icons/calendar-alt-regular.svg" alt="Kalender-Icon" />
+                <span> 11.10.2024</span>
             </div>
-        </header>
-        <main class="main-content">
-            <section class="title-section">
-                <h2>Veganes Mett</h2>
-                <img
-                    class="preview-img"
-                    src="./assets/img/mett.jpg"
-                    alt="Foto von Brötchen mit veganem Mett"
-                />
-            </section>
-            <section class="info-section">
-                <div class="info-container">
-                    <img
-                        class="info-icon"
-                        src="./assets/icons/clock-regular.svg"
-                        alt="Uhr-Icon"
-                    />
-                    <span>
-                        30 Min. Vorbereitung + mehrere Stunden Wartezeit</span
-                    >
-                </div>
-                <div class="info-container">
-                    <img
-                        class="info-icon"
-                        src="./assets/icons/brain-solid.svg"
-                        alt="Gehirn-Icon"
-                    />
-                    <span> einfach</span>
-                </div>
-                <div class="info-container">
-                    <img
-                        class="info-icon"
-                        src="./assets/icons/calendar-alt-regular.svg"
-                        alt="Kalender-Icon"
-                    />
-                    <span> 11.10.2024</span>
-                </div>
-            </section>
-            <section class="ingredients-and-calculator-section">
-                <div class="calc-container">
-                    <label for="count-portion-input">Zutaten für&nbsp;</label>
-                    <input
-                        id="count-portion-input"
-                        type="number"
-                        min="1"
-                        value="6"
-                    />
-                    <input
-                        class="button"
-                        type="button"
-                        value="Portionen"
-                        onclick="calculateNeededIngredients(6)"
-                    />
-                </div>
-                <div class="ingredients-table-container">
-                    <table class="ingredients-tbl">
-                        <tr>
-                            <td class="count-ingred">150</td>
-                            <td class="unit">g</td>
-                            <td class="ingredient">
-                                Reiswaffeln (eine Packung)
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="count-ingred">150</td>
-                            <td class="unit">ml</td>
-                            <td class="ingredient">Wasser</td>
-                        </tr>
-                        <tr>
-                            <td class="count-ingred">3</td>
-                            <td class="unit">EL</td>
-                            <td class="ingredient">Tomatenmark</td>
-                        </tr>
-                        <tr>
-                            <td class="count-ingred">2</td>
-                            <td class="unit"></td>
-                            <td class="ingredient">große Zwiebeln</td>
-                        </tr>
-                        <tr>
-                            <td class="count-ingred"></td>
-                            <td class="unit"></td>
-                            <td class="ingredient">Salz und Pfeffer</td>
-                        </tr>
-                        <tr>
-                            <td class="count-ingred">50</td>
-                            <td class="unit">ml</td>
-                            <td class="ingredient">Rapsöl</td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="preparation-container">
-                    <h2>Zubereitung</h2>
-                    <section class="preparation-info-section">
-                        <div class="info-container">
-                            <img
-                                class="info-icon"
-                                src="./assets/icons/clock-regular.svg"
-                                alt="Uhr-Icon"
-                            />
-                            <span> ca. 30 Minunten</span>
-                        </div>
-                        <div class="info-container">
-                            <img
-                                class="info-icon"
-                                src="./assets/icons/clock-regular.svg"
-                                alt="Uhr-Icon"
-                            />
-                            <span>
-                                Gesamtzeit mehrere Stunden durch Wartezeit</span
-                            >
-                        </div>
-                    </section>
-                </div>
-                <div class="how-to-container">
-                    <p>
-                        Zunächst werden alle Reiswaffeln fein in eine Schüssel
-                        zerbröselt.<br />
-                        Dann das Wasser mit dem Tomatenmark vermischen. Als
-                        nächstes die Zwiebeln sehr fein schneiden oder hacken.
-                        Alles zusammen in der Schüssel vermengen, bis eine
-                        homogene, breiige Masse entsteht.<br />
-                        Das Ganze mit viel Salz und Pfeffer würzen. Noch einmal
-                        umrühren und dann die abgedeckte Schüssel für mehrere
-                        Stunden (gerne auch über Nacht) in den Kühlschrank
-                        stellen.<br />
-                        Nach der Wartezeit das Öl für die Konsistenz hinzugeben,
-                        noch einmal gut nachwürzen und kräftig vermengen.<br />
-                        Danach alles in ein schönes Behältnis geben und
-                        servieren.
-                    </p>
-                </div>
-            </section>
-            <section class="author-section">
-                <h3>Rezept erstellt von</h3>
-                <div class="author-info-container">
-                    <div class="author-profile-img">
-                        <img
-                            src="./assets/img/profileImg/profile_image_dj.jpg"
-                            alt="Profilbild"
-                        />
+        </section>
+        <section class="ingredients-and-calculator-section">
+            <div class="calc-container">
+                <label for="count-portion-input">Zutaten für&nbsp;</label>
+                <input id="count-portion-input" type="number" min="1" value="6" />
+                <input class="button" type="button" value="Portionen" onclick="calculateNeededIngredients(6)" />
+            </div>
+            <div class="ingredients-table-container">
+                <table class="ingredients-tbl">
+                    <tr>
+                        <td class="count-ingred">150</td>
+                        <td class="unit">g</td>
+                        <td class="ingredient">
+                            Reiswaffeln (eine Packung)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="count-ingred">150</td>
+                        <td class="unit">ml</td>
+                        <td class="ingredient">Wasser</td>
+                    </tr>
+                    <tr>
+                        <td class="count-ingred">3</td>
+                        <td class="unit">EL</td>
+                        <td class="ingredient">Tomatenmark</td>
+                    </tr>
+                    <tr>
+                        <td class="count-ingred">2</td>
+                        <td class="unit"></td>
+                        <td class="ingredient">große Zwiebeln</td>
+                    </tr>
+                    <tr>
+                        <td class="count-ingred"></td>
+                        <td class="unit"></td>
+                        <td class="ingredient">Salz und Pfeffer</td>
+                    </tr>
+                    <tr>
+                        <td class="count-ingred">50</td>
+                        <td class="unit">ml</td>
+                        <td class="ingredient">Rapsöl</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="preparation-container">
+                <h2>Zubereitung</h2>
+                <section class="preparation-info-section">
+                    <div class="info-container">
+                        <img class="info-icon" src="./assets/icons/clock-regular.svg" alt="Uhr-Icon" />
+                        <span> ca. 30 Minunten</span>
                     </div>
-                    <div class="author-name">
-                        <span>Dennis Jakobi</span>
+                    <div class="info-container">
+                        <img class="info-icon" src="./assets/icons/clock-regular.svg" alt="Uhr-Icon" />
+                        <span>
+                            Gesamtzeit mehrere Stunden durch Wartezeit</span>
                     </div>
+                </section>
+            </div>
+            <div class="how-to-container">
+                <p>
+                    Zunächst werden alle Reiswaffeln fein in eine Schüssel
+                    zerbröselt.<br />
+                    Dann das Wasser mit dem Tomatenmark vermischen. Als
+                    nächstes die Zwiebeln sehr fein schneiden oder hacken.
+                    Alles zusammen in der Schüssel vermengen, bis eine
+                    homogene, breiige Masse entsteht.<br />
+                    Das Ganze mit viel Salz und Pfeffer würzen. Noch einmal
+                    umrühren und dann die abgedeckte Schüssel für mehrere
+                    Stunden (gerne auch über Nacht) in den Kühlschrank
+                    stellen.<br />
+                    Nach der Wartezeit das Öl für die Konsistenz hinzugeben,
+                    noch einmal gut nachwürzen und kräftig vermengen.<br />
+                    Danach alles in ein schönes Behältnis geben und
+                    servieren.
+                </p>
+            </div>
+        </section>
+        <section class="author-section">
+            <h3>Rezept erstellt von</h3>
+            <div class="author-info-container">
+                <div class="author-profile-img">
+                    <img src="./assets/img/profileImg/profile_image_dj.jpg" alt="Profilbild" />
                 </div>
-            </section>
-        </main>
-        <footer>
-            <div class="footer-img-container">
-                <a href="#start"
-                    ><img
-                        class="footer-logo"
-                        src="./assets/img/logo.png"
-                        alt="Kochwelt-Logo"
-                /></a>
+                <div class="author-name">
+                    <span>Dennis Jakobi</span>
+                </div>
             </div>
-            <div class="footer-link-container">
-                <a
-                    class="footer-link"
-                    target="_blank"
-                    href="https://www.facebook.com"
-                    ><img
-                        id="facebook-img"
-                        class="footer-link-img"
-                        src="./assets/img/socialmediaLinks/footer_facebook.png"
-                        alt="Facebook-Logo"
-                /></a>
-                <a
-                    class="footer-link"
-                    target="_blank"
-                    href="https://www.instagram.com"
-                    ><img
-                        id="insta-img"
-                        class="footer-link-img"
-                        src="./assets/img/socialmediaLinks/footer_instagram.png"
-                        alt="Instagram-Logo"
-                /></a>
-                <a class="footer-link" target="_blank" href="https://x.com"
-                    ><img
-                        id="twitter-img"
-                        class="footer-link-img"
-                        src="./assets/img/socialmediaLinks/footer_twitter.png"
-                        alt="Twitter-Logo"
-                /></a>
-            </div>
-        </footer>
-    </body>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-img-container">
+            <a href="#start"><img class="footer-logo" src="./assets/img/logo.png" alt="Kochwelt-Logo" /></a>
+        </div>
+        <div class="footer-link-container">
+            <a class="footer-link" target="_blank" href="https://www.facebook.com"><img id="facebook-img"
+                    class="footer-link-img" src="./assets/img/socialmediaLinks/footer_facebook.png"
+                    alt="Facebook-Logo" /></a>
+            <a class="footer-link" target="_blank" href="https://www.instagram.com"><img id="insta-img"
+                    class="footer-link-img" src="./assets/img/socialmediaLinks/footer_instagram.png"
+                    alt="Instagram-Logo" /></a>
+            <a class="footer-link" target="_blank" href="https://x.com"><img id="twitter-img" class="footer-link-img"
+                    src="./assets/img/socialmediaLinks/footer_twitter.png" alt="Twitter-Logo" /></a>
+        </div>
+    </footer>
+</body>
+
 </html>

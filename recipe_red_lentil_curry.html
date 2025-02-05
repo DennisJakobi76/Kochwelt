@@ -1,275 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
-        <title>Kochwelt</title>
-        <link
-            rel="icon"
-            type="image/x-icon"
-            href="./assets/img/logo_small.png"
-        />
-        <script src="./shared/scripts/responsive_menu.js" defer></script>
-        <script src="./scripts/main.js" defer></script>
-        <script src="./scripts/recipe_calculator.js" defer></script>
-        <link rel="stylesheet" href="./shared/styles/color.css" />
-        <link rel="stylesheet" href="./styles/recipe.css" />
-        <link rel="stylesheet" href="./shared/styles/style.css" />
-        <link rel="stylesheet" href="./shared/styles/responsive.css" />
-    </head>
-    <body>
-        <header id="start">
-            <div class="top-logo-div">
-                <a href="#start"
-                    ><img src="./assets/img/logo.png" alt="Kochwelt-Logo"
-                /></a>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
+    <title>Kochwelt</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/logo_small.png" />
+    <script src="./shared/scripts/responsive_menu.js" defer></script>
+    <script src="./scripts/main.js" defer></script>
+    <script src="./scripts/recipe_calculator.js" defer></script>
+    <link rel="stylesheet" href="./shared/styles/color.css" />
+    <link rel="stylesheet" href="./styles/recipe.css" />
+    <link rel="stylesheet" href="./shared/styles/style.css" />
+    <link rel="stylesheet" href="./shared/styles/responsive.css" />
+</head>
+
+<body>
+    <header id="start">
+        <div class="top-logo-div">
+            <a href="#start"><img src="./assets/img/logo.png" alt="Kochwelt-Logo" /></a>
+        </div>
+        <nav>
+            <a href="./index.html" class="nav-link">Start</a>
+            <a href="./recipe_red_lentil_curry.html" class="nav-link nav-link-recipe-of-the-day youAreHere">Rezept des
+                Tages</a>
+            <a href="./contact.html" class="nav-link">Kontakt</a>
+            <a href="./impressum.html" class="nav-link">Impressum</a>
+        </nav>
+        <div id="burger-icon-btn" class="burgerbutton_clickable d_none" onclick="toggleElement()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div id="responsive-nav-links" class="burger-nav-links burger-nav-links-closed">
+            <a href="./index.html" class="nav-link">Start</a>
+            <a href="./recipe_red_lentil_curry.html"
+                class="nav-link responsive-nav-link-recipe-of-the-day youAreHere">Rezept des Tages</a>
+            <a href="./contact.html" class="nav-link">Kontakt</a>
+            <a href="./impressum.html" class="nav-link">Impressum</a>
+        </div>
+    </header>
+    <main class="main-content">
+        <section class="title-section">
+            <h2>Rote Linsen Curry mit Süßkartoffeln</h2>
+            <img class="preview-img" src="./assets/img/rote-linsen-curry-mit-suesskartoffeln.png"
+                alt="Foto von Linsen Curry" />
+        </section>
+        <section class="info-section">
+            <div class="info-container">
+                <img class="info-icon" src="./assets/icons/clock-regular.svg" alt="Uhr-Icon" />
+                <span> 45 Min.</span>
             </div>
-            <nav>
-                <a href="./index.html" class="nav-link">Start</a>
-                <a
-                    href="./recipe_red_lentil_curry.html"
-                    class="nav-link nav-link-recipe-of-the-day youAreHere"
-                    >Rezept des Tages</a
-                >
-                <a href="./contact.html" class="nav-link">Kontakt</a>
-                <a href="./impressum.html" class="nav-link">Impressum</a>
-            </nav>
-            <div
-                id="burger-icon-btn"
-                class="burgerbutton_clickable d_none"
-                onclick="toggleElement()"
-            >
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
+            <div class="info-container">
+                <img class="info-icon" src="./assets/icons/brain-solid.svg" alt="Gehirn-Icon" />
+                <span> einfach</span>
             </div>
-            <div
-                id="responsive-nav-links"
-                class="burger-nav-links burger-nav-links-closed"
-            >
-                <a href="./index.html" class="nav-link">Start</a>
-                <a
-                    href="./recipe_red_lentil_curry.html"
-                    class="nav-link responsive-nav-link-recipe-of-the-day youAreHere"
-                    >Rezept des Tages</a
-                >
-                <a href="./contact.html" class="nav-link">Kontakt</a>
-                <a href="./impressum.html" class="nav-link">Impressum</a>
+            <div class="info-container">
+                <img class="info-icon" src="./assets/icons/calendar-alt-regular.svg" alt="Kalender-Icon" />
+                <span> 11.10.2024</span>
             </div>
-        </header>
-        <main class="main-content">
-            <section class="title-section">
-                <h2>Rote Linsen Curry mit Süßkartoffeln</h2>
-                <img
-                    class="preview-img"
-                    src="./assets/img/rote-linsen-curry-mit-suesskartoffeln.png"
-                    alt="Foto von Linsen Curry"
-                />
-            </section>
-            <section class="info-section">
-                <div class="info-container">
-                    <img
-                        class="info-icon"
-                        src="./assets/icons/clock-regular.svg"
-                        alt="Uhr-Icon"
-                    />
-                    <span> 45 Min.</span>
-                </div>
-                <div class="info-container">
-                    <img
-                        class="info-icon"
-                        src="./assets/icons/brain-solid.svg"
-                        alt="Gehirn-Icon"
-                    />
-                    <span> einfach</span>
-                </div>
-                <div class="info-container">
-                    <img
-                        class="info-icon"
-                        src="./assets/icons/calendar-alt-regular.svg"
-                        alt="Kalender-Icon"
-                    />
-                    <span> 11.10.2024</span>
-                </div>
-            </section>
-            <section class="ingredients-and-calculator-section">
-                <div class="calc-container">
-                    <label for="count-portion-input">Zutaten für&nbsp;</label>
-                    <input
-                        id="count-portion-input"
-                        type="number"
-                        min="1"
-                        value="3"
-                    />
-                    <input
-                        class="button"
-                        type="button"
-                        value="Portionen"
-                        onclick="calculateNeededIngredients(3)"
-                    />
-                </div>
-                <div class="ingredients-table-container">
-                    <table class="ingredients-tbl">
-                        <tr>
-                            <td class="count-ingred">450</td>
-                            <td class="unit">g</td>
-                            <td class="ingredient">Süßkartoffel(n)</td>
-                        </tr>
-                        <tr>
-                            <td class="count-ingred">1</td>
-                            <td class="unit"></td>
-                            <td class="ingredient">
-                                große Paprikaschote(n), rote
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="count-ingred">2</td>
-                            <td class="unit"></td>
-                            <td class="ingredient">Knoblauchzehe(n)</td>
-                        </tr>
-                        <tr>
-                            <td class="count-ingred">2</td>
-                            <td class="unit"></td>
-                            <td class="ingredient">mittel-große Zwiebeln</td>
-                        </tr>
-                        <tr>
-                            <td class="count-ingred">1</td>
-                            <td class="unit">EL</td>
-                            <td class="ingredient">Olivenöl</td>
-                        </tr>
-                        <tr>
-                            <td class="count-ingred">2</td>
-                            <td class="unit">EL</td>
-                            <td class="ingredient">Tomatenmark</td>
-                        </tr>
-                        <tr>
-                            <td class="count-ingred">2</td>
-                            <td class="unit">TL</td>
-                            <td class="ingredient">Currypulver</td>
-                        </tr>
-                        <tr>
-                            <td class="count-ingred">2</td>
-                            <td class="unit">TL</td>
-                            <td class="ingredient">Kurkuma</td>
-                        </tr>
-                        <tr>
-                            <td class="count-ingred">1</td>
-                            <td class="unit">TL</td>
-                            <td class="ingredient">Garam Masala</td>
-                        </tr>
-                        <tr>
-                            <td class="count-ingred"></td>
-                            <td class="unit"></td>
-                            <td class="ingredient">Salz und Pfeffer</td>
-                        </tr>
-                        <tr>
-                            <td class="count-ingred">200</td>
-                            <td class="unit">g</td>
-                            <td class="ingredient">Linsen, rote</td>
-                        </tr>
-                        <tr>
-                            <td class="count-ingred">500</td>
-                            <td class="unit">ml</td>
-                            <td class="ingredient">Kokosmilch</td>
-                        </tr>
-                        <tr>
-                            <td class="count-ingred">250</td>
-                            <td class="unit">ml</td>
-                            <td class="ingredient">Gemüsebrühe</td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="preparation-container">
-                    <h2>Zubereitung</h2>
-                    <section class="preparation-info-section">
-                        <div class="info-container">
-                            <img
-                                class="info-icon"
-                                src="./assets/icons/clock-regular.svg"
-                                alt="Uhr-Icon"
-                            />
-                            <span> Vorbereitungszeit: 10 Minunten</span>
-                        </div>
-                        <div class="info-container">
-                            <img
-                                class="info-icon"
-                                src="./assets/icons/clock-regular.svg"
-                                alt="Uhr-Icon"
-                            />
-                            <span> Kochzeit: 35 Min.</span>
-                        </div>
-                    </section>
-                </div>
-                <div class="how-to-container">
-                    <p>
-                        Die Süßkartoffeln schälen und würfeln. Die Paprikaschote
-                        würfeln, den Knoblauch schälen und die Zwiebeln klein
-                        schneiden.
-                        <br /><br />
-                        Das Olivenöl in einem großen Topf erhitzen und die
-                        Zwiebeln glasig anschwitzen. Den Knoblauch durch die
-                        Presse in den Topf drücken, kurz mitbraten und dann
-                        Süßkartoffeln und Paprika in den Topf geben. Das
-                        Tomatenmark und die Gewürze dazugeben und kurz
-                        mitbraten, anschließend die Linsen hinzufügen. Nun alles
-                        mit Kokosmilch und Gemüsebrühe aufgießen und ca. 25 min.
-                        köcheln lassen.
-                        <br /><br />
-                        Das Curry schmeckt am nächsten Tag meist noch besser und
-                        lässt sich auch gut einfrieren.
-                    </p>
-                </div>
-            </section>
-            <section class="author-section">
-                <h3>Rezept erstellt von</h3>
-                <div class="author-info-container">
-                    <div class="author-profile-img">
-                        <img src="./assets/img/profile.png" alt="Profilbild" />
+        </section>
+        <section class="ingredients-and-calculator-section">
+            <div class="calc-container">
+                <label for="count-portion-input">Zutaten für&nbsp;</label>
+                <input id="count-portion-input" type="number" min="1" value="3" />
+                <input class="button" type="button" value="Portionen" onclick="calculateNeededIngredients(3)" />
+            </div>
+            <div class="ingredients-table-container">
+                <table class="ingredients-tbl">
+                    <tr>
+                        <td class="count-ingred">450</td>
+                        <td class="unit">g</td>
+                        <td class="ingredient">Süßkartoffel(n)</td>
+                    </tr>
+                    <tr>
+                        <td class="count-ingred">1</td>
+                        <td class="unit"></td>
+                        <td class="ingredient">
+                            große Paprikaschote(n), rote
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="count-ingred">2</td>
+                        <td class="unit"></td>
+                        <td class="ingredient">Knoblauchzehe(n)</td>
+                    </tr>
+                    <tr>
+                        <td class="count-ingred">2</td>
+                        <td class="unit"></td>
+                        <td class="ingredient">mittel-große Zwiebeln</td>
+                    </tr>
+                    <tr>
+                        <td class="count-ingred">1</td>
+                        <td class="unit">EL</td>
+                        <td class="ingredient">Olivenöl</td>
+                    </tr>
+                    <tr>
+                        <td class="count-ingred">2</td>
+                        <td class="unit">EL</td>
+                        <td class="ingredient">Tomatenmark</td>
+                    </tr>
+                    <tr>
+                        <td class="count-ingred">2</td>
+                        <td class="unit">TL</td>
+                        <td class="ingredient">Currypulver</td>
+                    </tr>
+                    <tr>
+                        <td class="count-ingred">2</td>
+                        <td class="unit">TL</td>
+                        <td class="ingredient">Kurkuma</td>
+                    </tr>
+                    <tr>
+                        <td class="count-ingred">1</td>
+                        <td class="unit">TL</td>
+                        <td class="ingredient">Garam Masala</td>
+                    </tr>
+                    <tr>
+                        <td class="count-ingred"></td>
+                        <td class="unit"></td>
+                        <td class="ingredient">Salz und Pfeffer</td>
+                    </tr>
+                    <tr>
+                        <td class="count-ingred">200</td>
+                        <td class="unit">g</td>
+                        <td class="ingredient">Linsen, rote</td>
+                    </tr>
+                    <tr>
+                        <td class="count-ingred">500</td>
+                        <td class="unit">ml</td>
+                        <td class="ingredient">Kokosmilch</td>
+                    </tr>
+                    <tr>
+                        <td class="count-ingred">250</td>
+                        <td class="unit">ml</td>
+                        <td class="ingredient">Gemüsebrühe</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="preparation-container">
+                <h2>Zubereitung</h2>
+                <section class="preparation-info-section">
+                    <div class="info-container">
+                        <img class="info-icon" src="./assets/icons/clock-regular.svg" alt="Uhr-Icon" />
+                        <span> Vorbereitungszeit: 10 Minunten</span>
                     </div>
-                    <div class="author-name">
-                        <span>Bastian Abel</span>
+                    <div class="info-container">
+                        <img class="info-icon" src="./assets/icons/clock-regular.svg" alt="Uhr-Icon" />
+                        <span> Kochzeit: 35 Min.</span>
                     </div>
+                </section>
+            </div>
+            <div class="how-to-container">
+                <p>
+                    Die Süßkartoffeln schälen und würfeln. Die Paprikaschote
+                    würfeln, den Knoblauch schälen und die Zwiebeln klein
+                    schneiden.
+                    <br /><br />
+                    Das Olivenöl in einem großen Topf erhitzen und die
+                    Zwiebeln glasig anschwitzen. Den Knoblauch durch die
+                    Presse in den Topf drücken, kurz mitbraten und dann
+                    Süßkartoffeln und Paprika in den Topf geben. Das
+                    Tomatenmark und die Gewürze dazugeben und kurz
+                    mitbraten, anschließend die Linsen hinzufügen. Nun alles
+                    mit Kokosmilch und Gemüsebrühe aufgießen und ca. 25 min.
+                    köcheln lassen.
+                    <br /><br />
+                    Das Curry schmeckt am nächsten Tag meist noch besser und
+                    lässt sich auch gut einfrieren.
+                </p>
+            </div>
+        </section>
+        <section class="author-section">
+            <h3>Rezept erstellt von</h3>
+            <div class="author-info-container">
+                <div class="author-profile-img">
+                    <img src="./assets/img/profile.png" alt="Profilbild" />
                 </div>
-            </section>
-        </main>
-        <footer>
-            <div class="footer-img-container">
-                <a href="#start"
-                    ><img
-                        class="footer-logo"
-                        src="./assets/img/logo.png"
-                        alt="Kochwelt-Logo"
-                /></a>
+                <div class="author-name">
+                    <span>Bastian Abel</span>
+                </div>
             </div>
-            <div class="footer-link-container">
-                <a
-                    class="footer-link"
-                    target="_blank"
-                    href="https://www.facebook.com"
-                    ><img
-                        id="facebook-img"
-                        class="footer-link-img"
-                        src="./assets/img/socialmediaLinks/footer_facebook.png"
-                        alt="Facebook-Logo"
-                /></a>
-                <a
-                    class="footer-link"
-                    target="_blank"
-                    href="https://www.instagram.com"
-                    ><img
-                        id="insta-img"
-                        class="footer-link-img"
-                        src="./assets/img/socialmediaLinks/footer_instagram.png"
-                        alt="Instagram-Logo"
-                /></a>
-                <a class="footer-link" target="_blank" href="https://x.com"
-                    ><img
-                        id="twitter-img"
-                        class="footer-link-img"
-                        src="./assets/img/socialmediaLinks/footer_twitter.png"
-                        alt="Twitter-Logo"
-                /></a>
-            </div>
-        </footer>
-    </body>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-img-container">
+            <a href="#start"><img class="footer-logo" src="./assets/img/logo.png" alt="Kochwelt-Logo" /></a>
+        </div>
+        <div class="footer-link-container">
+            <a class="footer-link" target="_blank" href="https://www.facebook.com"><img id="facebook-img"
+                    class="footer-link-img" src="./assets/img/socialmediaLinks/footer_facebook.png"
+                    alt="Facebook-Logo" /></a>
+            <a class="footer-link" target="_blank" href="https://www.instagram.com"><img id="insta-img"
+                    class="footer-link-img" src="./assets/img/socialmediaLinks/footer_instagram.png"
+                    alt="Instagram-Logo" /></a>
+            <a class="footer-link" target="_blank" href="https://x.com"><img id="twitter-img" class="footer-link-img"
+                    src="./assets/img/socialmediaLinks/footer_twitter.png" alt="Twitter-Logo" /></a>
+        </div>
+    </footer>
+</body>
+
 </html>

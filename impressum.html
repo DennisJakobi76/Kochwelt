@@ -1,156 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
-        <title>Kochwelt</title>
-        <link
-            rel="icon"
-            type="image/x-icon"
-            href="./assets/img/logo_small.png"
-        />
-        <script src="./shared/scripts/responsive_menu.js" defer></script>
-        <script src="./scripts/main.js" defer></script>
-        <link rel="stylesheet" href="./shared/styles/color.css" />
-        <link rel="stylesheet" href="./styles/impressum.css" />
-        <link rel="stylesheet" href="./shared/styles/style.css" />
-        <link rel="stylesheet" href="./shared/styles/responsive.css" />
-    </head>
-    <body>
-        <header id="start">
-            <div class="top-logo-div">
-                <a href="#start"
-                    ><img src="./assets/img/logo.png" alt="Kochwelt-Logo"
-                /></a>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
+    <title>Kochwelt</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/logo_small.png" />
+    <script src="./shared/scripts/responsive_menu.js" defer></script>
+    <script src="./scripts/main.js" defer></script>
+    <link rel="stylesheet" href="./shared/styles/color.css" />
+    <link rel="stylesheet" href="./styles/impressum.css" />
+    <link rel="stylesheet" href="./shared/styles/style.css" />
+    <link rel="stylesheet" href="./shared/styles/responsive.css" />
+</head>
+
+<body>
+    <header id="start">
+        <div class="top-logo-div">
+            <a href="#start"><img src="./assets/img/logo.png" alt="Kochwelt-Logo" /></a>
+        </div>
+        <nav>
+            <a href="./index.html" class="nav-link">Start</a>
+            <a href="./recipe_dubai_chocolate.html" class="nav-link nav-link-recipe-of-the-day">Rezept des Tages</a>
+            <a href="./contact.html" class="nav-link">Kontakt</a>
+            <a href="./impressum.html" class="nav-link youAreHere">Impressum</a>
+        </nav>
+        <div id="burger-icon-btn" class="burgerbutton_clickable d_none" onclick="toggleElement()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div id="responsive-nav-links" class="burger-nav-links burger-nav-links-closed">
+            <a href="./index.html" class="nav-link">Start</a>
+            <a href="./recipe_dubai_chocolate.html" class="nav-link responsive-nav-link-recipe-of-the-day">Rezept des
+                Tages</a>
+            <a href="./contact.html" class="nav-link">Kontakt</a>
+            <a href="./impressum.html" class="nav-link youAreHere">Impressum</a>
+        </div>
+    </header>
+    <main id="form-main-content" class="main-content">
+        <div class="form-container">
+            <h2>Impressum</h2>
+            <div class="form-paragraph">
+                <p>
+                    Dennis Jakobi<br />
+                    Gartenstraße 90<br />45699 Herten
+                </p>
             </div>
-            <nav>
-                <a href="./index.html" class="nav-link">Start</a>
-                <a
-                    href="./recipe_dubai_chocolate.html"
-                    class="nav-link nav-link-recipe-of-the-day"
-                    >Rezept des Tages</a
-                >
-                <a href="./contact.html" class="nav-link">Kontakt</a>
-                <a href="./impressum.html" class="nav-link youAreHere"
-                    >Impressum</a
-                >
-            </nav>
-            <div
-                id="burger-icon-btn"
-                class="burgerbutton_clickable d_none"
-                onclick="toggleElement()"
-            >
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
+            <div class="form-paragraph">
+                <p>
+                    Telefon: +4917687903079<br />
+                    E-Mail:
+                    <a href="mailto:dennis.jakobi76@gmail.com">dennis.jakobi76@gmail.com</a><br />
+                </p>
             </div>
-            <div
-                id="responsive-nav-links"
-                class="burger-nav-links burger-nav-links-closed"
-            >
-                <a href="./index.html" class="nav-link">Start</a>
-                <a
-                    href="./recipe_dubai_chocolate.html"
-                    class="nav-link responsive-nav-link-recipe-of-the-day"
-                    >Rezept des Tages</a
-                >
-                <a href="./contact.html" class="nav-link">Kontakt</a>
-                <a href="./impressum.html" class="nav-link youAreHere"
-                    >Impressum</a
-                >
+            <div class="form-paragraph">
+                <p>
+                    Quelle:
+                    <a href="https://www.fachanwalt.de">Original ansehen</a>
+                </p>
             </div>
-        </header>
-        <main id="form-main-content" class="main-content">
-            <div class="form-container">
-                <h2>Impressum</h2>
-                <div class="form-paragraph">
-                    <p>
-                        Dennis Jakobi<br />
-                        Gartenstraße 90<br />45699 Herten
-                    </p>
-                </div>
-                <div class="form-paragraph">
-                    <p>
-                        Telefon: +4917687903079<br />
-                        E-Mail:
-                        <a href="mailto:dennis.jakobi76@gmail.com"
-                            >dennis.jakobi76@gmail.com</a
-                        ><br />
-                    </p>
-                </div>
-                <div class="form-paragraph">
-                    <p>
-                        Quelle:
-                        <a href="https://www.fachanwalt.de">Original ansehen</a>
-                    </p>
-                </div>
-                <div class="form-paragraph">
-                    <p>
-                        Created my free logo at
-                        <a href="https://logomakr.com" target="_blank"
-                            >LogoMakr.com</a
-                        >
-                    </p>
-                </div>
-                <div class="form-paragraph">
-                    <p>
-                        The icons are provided by
-                        <a
-                            href="https://fontawesome.com/"
-                            rel="nofollow"
-                            target="_blank"
-                            >FontAwesome</a
-                        >
-                        unter the
-                        <a
-                            href="https://fontawesome.com/license"
-                            target="_blank"
-                            rel="nofollow"
-                            >Creative Commons Attribution 4.0 International
-                            license</a
-                        >.
-                    </p>
-                </div>
+            <div class="form-paragraph">
+                <p>
+                    Created my free logo at
+                    <a href="https://logomakr.com" target="_blank">LogoMakr.com</a>
+                </p>
             </div>
-        </main>
-        <footer>
-            <div class="footer-img-container">
-                <a href="#start"
-                    ><img
-                        class="footer-logo"
-                        src="./assets/img/logo.png"
-                        alt="Kochwelt-Logo"
-                /></a>
+            <div class="form-paragraph">
+                <p>
+                    The icons are provided by
+                    <a href="https://fontawesome.com/" rel="nofollow" target="_blank">FontAwesome</a>
+                    unter the
+                    <a href="https://fontawesome.com/license" target="_blank" rel="nofollow">Creative Commons
+                        Attribution 4.0 International
+                        license</a>.
+                </p>
             </div>
-            <div class="footer-link-container">
-                <a
-                    class="footer-link"
-                    target="_blank"
-                    href="https://www.facebook.com"
-                    ><img
-                        id="facebook-img"
-                        class="footer-link-img"
-                        src="./assets/img/socialmediaLinks/footer_facebook.png"
-                        alt="Facebook-Logo"
-                /></a>
-                <a
-                    class="footer-link"
-                    target="_blank"
-                    href="https://www.instagram.com"
-                    ><img
-                        id="insta-img"
-                        class="footer-link-img"
-                        src="./assets/img/socialmediaLinks/footer_instagram.png"
-                        alt="Instagram-Logo"
-                /></a>
-                <a class="footer-link" target="_blank" href="https://x.com"
-                    ><img
-                        id="twitter-img"
-                        class="footer-link-img"
-                        src="./assets/img/socialmediaLinks/footer_twitter.png"
-                        alt="Twitter-Logo"
-                /></a>
-            </div>
-        </footer>
-    </body>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-img-container">
+            <a href="#start"><img class="footer-logo" src="./assets/img/logo.png" alt="Kochwelt-Logo" /></a>
+        </div>
+        <div class="footer-link-container">
+            <a class="footer-link" target="_blank" href="https://www.facebook.com"><img id="facebook-img"
+                    class="footer-link-img" src="./assets/img/socialmediaLinks/footer_facebook.png"
+                    alt="Facebook-Logo" /></a>
+            <a class="footer-link" target="_blank" href="https://www.instagram.com"><img id="insta-img"
+                    class="footer-link-img" src="./assets/img/socialmediaLinks/footer_instagram.png"
+                    alt="Instagram-Logo" /></a>
+            <a class="footer-link" target="_blank" href="https://x.com"><img id="twitter-img" class="footer-link-img"
+                    src="./assets/img/socialmediaLinks/footer_twitter.png" alt="Twitter-Logo" /></a>
+        </div>
+    </footer>
+</body>
+
 </html>

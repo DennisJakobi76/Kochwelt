@@ -1,262 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
-        <title>Kochwelt</title>
-        <link
-            rel="icon"
-            type="image/x-icon"
-            href="./assets/img/logo_small.png"
-        />
-        <script src="./shared/scripts/responsive_menu.js" defer></script>
-        <script src="./scripts/main.js" defer></script>
-        <script src="./scripts/recipe_calculator.js" defer></script>
-        <link rel="stylesheet" href="./shared/styles/color.css" />
-        <link rel="stylesheet" href="./styles/recipe.css" />
-        <link rel="stylesheet" href="./shared/styles/style.css" />
-        <link rel="stylesheet" href="./shared/styles/responsive.css" />
-    </head>
-    <body>
-        <header id="start">
-            <div class="top-logo-div">
-                <a href="#start"
-                    ><img src="./assets/img/logo.png" alt="Kochwelt-Logo"
-                /></a>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
+    <title>Kochwelt</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/logo_small.png" />
+    <script src="./shared/scripts/responsive_menu.js" defer></script>
+    <script src="./scripts/main.js" defer></script>
+    <script src="./scripts/recipe_calculator.js" defer></script>
+    <link rel="stylesheet" href="./shared/styles/color.css" />
+    <link rel="stylesheet" href="./styles/recipe.css" />
+    <link rel="stylesheet" href="./shared/styles/style.css" />
+    <link rel="stylesheet" href="./shared/styles/responsive.css" />
+</head>
+
+<body>
+    <header id="start">
+        <div class="top-logo-div">
+            <a href="#start"><img src="./assets/img/logo.png" alt="Kochwelt-Logo" /></a>
+        </div>
+        <nav>
+            <a href="./index.html" class="nav-link">Start</a>
+            <a href="./recipe_dubai_chocolate.html" class="nav-link nav-link-recipe-of-the-day youAreHere">Rezept des
+                Tages</a>
+            <a href="./contact.html" class="nav-link">Kontakt</a>
+            <a href="./impressum.html" class="nav-link">Impressum</a>
+        </nav>
+        <div id="burger-icon-btn" class="burgerbutton_clickable d_none" onclick="toggleElement()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div id="responsive-nav-links" class="burger-nav-links burger-nav-links-closed">
+            <a href="./index.html" class="nav-link">Start</a>
+            <a href="#" class="nav-link responsive-nav-link-recipe-of-the-day youAreHere">Rezept des Tages</a>
+            <a href="./contact.html" class="nav-link">Kontakt</a>
+            <a href="./impressum.html" class="nav-link">Impressum</a>
+        </div>
+    </header>
+    <main class="main-content">
+        <section class="title-section">
+            <h2>Die berühmte Dubai-Schokolade</h2>
+            <img class="preview-img" src="./assets/img/dubai_schokolade.jpg" alt="Foto von Dubai-Schokolade" />
+        </section>
+        <section class="info-section">
+            <div class="info-container">
+                <img class="info-icon" src="./assets/icons/clock-regular.svg" alt="Uhr-Icon" />
+                <span>
+                    15 Min. Vorbereitungszeit + 3 Stunden und 15 Minunten
+                    Ruhezeit</span>
             </div>
-            <nav>
-                <a href="./index.html" class="nav-link">Start</a>
-                <a
-                    href="./recipe_dubai_chocolate.html"
-                    class="nav-link nav-link-recipe-of-the-day youAreHere"
-                    >Rezept des Tages</a
-                >
-                <a href="./contact.html" class="nav-link">Kontakt</a>
-                <a href="./impressum.html" class="nav-link">Impressum</a>
-            </nav>
-            <div
-                id="burger-icon-btn"
-                class="burgerbutton_clickable d_none"
-                onclick="toggleElement()"
-            >
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
+            <div class="info-container">
+                <img class="info-icon" src="./assets/icons/brain-solid.svg" alt="Gehirn-Icon" />
+                <span> einfach</span>
             </div>
-            <div
-                id="responsive-nav-links"
-                class="burger-nav-links burger-nav-links-closed"
-            >
-                <a href="./index.html" class="nav-link">Start</a>
-                <a
-                    href="#"
-                    class="nav-link responsive-nav-link-recipe-of-the-day youAreHere"
-                    >Rezept des Tages</a
-                >
-                <a href="./contact.html" class="nav-link">Kontakt</a>
-                <a href="./impressum.html" class="nav-link">Impressum</a>
+            <div class="info-container">
+                <img class="info-icon" src="./assets/icons/calendar-alt-regular.svg" alt="Kalender-Icon" />
+                <span> 28.09.2023</span>
             </div>
-        </header>
-        <main class="main-content">
-            <section class="title-section">
-                <h2>Die berühmte Dubai-Schokolade</h2>
-                <img
-                    class="preview-img"
-                    src="./assets/img/dubai_schokolade.jpg"
-                    alt="Foto von Dubai-Schokolade"
-                />
-            </section>
-            <section class="info-section">
-                <div class="info-container">
-                    <img
-                        class="info-icon"
-                        src="./assets/icons/clock-regular.svg"
-                        alt="Uhr-Icon"
-                    />
-                    <span>
-                        15 Min. Vorbereitungszeit + 3 Stunden und 15 Minunten
-                        Ruhezeit</span
-                    >
-                </div>
-                <div class="info-container">
-                    <img
-                        class="info-icon"
-                        src="./assets/icons/brain-solid.svg"
-                        alt="Gehirn-Icon"
-                    />
-                    <span> einfach</span>
-                </div>
-                <div class="info-container">
-                    <img
-                        class="info-icon"
-                        src="./assets/icons/calendar-alt-regular.svg"
-                        alt="Kalender-Icon"
-                    />
-                    <span> 28.09.2023</span>
-                </div>
-            </section>
-            <section class="ingredients-and-calculator-section">
-                <div class="calc-container">
-                    <label for="count-portion-input">Zutaten für&nbsp;</label>
-                    <input
-                        id="count-portion-input"
-                        type="number"
-                        min="1"
-                        value="1"
-                    />
-                    <input
-                        class="button"
-                        type="button"
-                        value="Portionen"
-                        onclick="calculateNeededIngredients(1)"
-                    />
-                </div>
-                <div class="ingredients-table-container">
-                    <table class="ingredients-tbl">
-                        <tr>
-                            <td class="count-ingred">50</td>
-                            <td class="unit">g</td>
-                            <td class="ingredient">Butter</td>
-                        </tr>
-                        <tr>
-                            <td class="count-ingred">50</td>
-                            <td class="unit">g</td>
-                            <td class="ingredient">
-                                Kadayif-Teigfäden oder Künefe (Engelshaar)
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="count-ingred">100</td>
-                            <td class="unit">EL</td>
-                            <td class="ingredient">
-                                Pistaziencreme, gezuckerte
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="count-ingred">150</td>
-                            <td class="unit">g</td>
-                            <td class="ingredient">Zartbitterschokolade</td>
-                        </tr>
-                        <tr>
-                            <td class="count-ingred">120</td>
-                            <td class="unit">g</td>
-                            <td class="ingredient">Schokolade, weiße</td>
-                        </tr>
-                        <tr>
-                            <td class="count-ingred">150</td>
-                            <td class="unit">g</td>
-                            <td class="ingredient">
-                                Pistazien, geröstet und gesalzen
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="preparation-container">
-                    <h2>Zubereitung</h2>
-                    <section class="preparation-info-section">
-                        <div class="info-container">
-                            <img
-                                class="info-icon"
-                                src="./assets/icons/clock-regular.svg"
-                                alt="Uhr-Icon"
-                            />
-                            <span> Arbeitszeit ca. 15 Minunten</span>
-                        </div>
-                        <div class="info-container">
-                            <img
-                                class="info-icon"
-                                src="./assets/icons/clock-regular.svg"
-                                alt="Uhr-Icon"
-                            />
-                            <span> Ruhezeit ca. 3 Stunden und 15 Minunten</span>
-                        </div>
-                        <div class="info-container">
-                            <img
-                                class="info-icon"
-                                src="./assets/icons/clock-regular.svg"
-                                alt="Uhr-Icon"
-                            />
-                            <span>
-                                Gesamtzeit ca. 3 Stunden und 30 Minuten</span
-                            >
-                        </div>
-                    </section>
-                </div>
-                <div class="how-to-container">
-                    <p>
-                        Die weiße Schokolade im Wasserbad schmelzen. Eine
-                        Silikon-Schokoladenform benutzen und zuerst die weiße,
-                        geschmolzene Schokolade auf den Boden der Form geben und
-                        gleichmäßig verteilen, dann die gesalzenen und
-                        gerösteten Pistazien hacken und darüber verteilen und
-                        kurz in den Gefrierer geben. Die Zartbitterschokolade im
-                        Wasserbad schmelzen. Einen Teil der geschmolzenen
-                        Zartbitterschokolade in die Form geben. Die
-                        Schokoladenform für 15 Minuten ins Gefrierfach legen,
-                        damit die erste Schicht aushärten kann. Die
-                        Kadayif-Teigfäden in einer Pfanne mit etwas Butter
-                        goldbraun rösten. Dabei ständig umrühren, damit sie
-                        nicht verbrennen. Die Pistaziencreme dazugeben und
-                        nochmal gut durch rühren. Nun die gerösteten
-                        Pistazien-Kadayif-Teigfäden in der Form verteilen und
-                        gleichmäßig darüber streichen. Die restliche Schokolade
-                        darüber gießen und glatt streichen. Die Schokolade für
-                        mindestens 3 Stunden im Kühlschrank fest werden lassen.
-                        Die Schokolade aus der Form lösen und in Stücke
-                        schneiden. Schmeckt super lecker!
-                    </p>
-                </div>
-            </section>
-            <section class="author-section">
-                <h3>Rezept erstellt von</h3>
-                <div class="author-info-container">
-                    <div class="author-profile-img">
-                        <img src="./assets/img/profile.png" alt="Profilbild" />
+        </section>
+        <section class="ingredients-and-calculator-section">
+            <div class="calc-container">
+                <label for="count-portion-input">Zutaten für&nbsp;</label>
+                <input id="count-portion-input" type="number" min="1" value="1" />
+                <input class="button" type="button" value="Portionen" onclick="calculateNeededIngredients(1)" />
+            </div>
+            <div class="ingredients-table-container">
+                <table class="ingredients-tbl">
+                    <tr>
+                        <td class="count-ingred">50</td>
+                        <td class="unit">g</td>
+                        <td class="ingredient">Butter</td>
+                    </tr>
+                    <tr>
+                        <td class="count-ingred">50</td>
+                        <td class="unit">g</td>
+                        <td class="ingredient">
+                            Kadayif-Teigfäden oder Künefe (Engelshaar)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="count-ingred">100</td>
+                        <td class="unit">EL</td>
+                        <td class="ingredient">
+                            Pistaziencreme, gezuckerte
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="count-ingred">150</td>
+                        <td class="unit">g</td>
+                        <td class="ingredient">Zartbitterschokolade</td>
+                    </tr>
+                    <tr>
+                        <td class="count-ingred">120</td>
+                        <td class="unit">g</td>
+                        <td class="ingredient">Schokolade, weiße</td>
+                    </tr>
+                    <tr>
+                        <td class="count-ingred">150</td>
+                        <td class="unit">g</td>
+                        <td class="ingredient">
+                            Pistazien, geröstet und gesalzen
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="preparation-container">
+                <h2>Zubereitung</h2>
+                <section class="preparation-info-section">
+                    <div class="info-container">
+                        <img class="info-icon" src="./assets/icons/clock-regular.svg" alt="Uhr-Icon" />
+                        <span> Arbeitszeit ca. 15 Minunten</span>
                     </div>
-                    <div class="author-name">
-                        <span>Lina Cetinkaya</span>
+                    <div class="info-container">
+                        <img class="info-icon" src="./assets/icons/clock-regular.svg" alt="Uhr-Icon" />
+                        <span> Ruhezeit ca. 3 Stunden und 15 Minunten</span>
                     </div>
+                    <div class="info-container">
+                        <img class="info-icon" src="./assets/icons/clock-regular.svg" alt="Uhr-Icon" />
+                        <span>
+                            Gesamtzeit ca. 3 Stunden und 30 Minuten</span>
+                    </div>
+                </section>
+            </div>
+            <div class="how-to-container">
+                <p>
+                    Die weiße Schokolade im Wasserbad schmelzen. Eine
+                    Silikon-Schokoladenform benutzen und zuerst die weiße,
+                    geschmolzene Schokolade auf den Boden der Form geben und
+                    gleichmäßig verteilen, dann die gesalzenen und
+                    gerösteten Pistazien hacken und darüber verteilen und
+                    kurz in den Gefrierer geben. Die Zartbitterschokolade im
+                    Wasserbad schmelzen. Einen Teil der geschmolzenen
+                    Zartbitterschokolade in die Form geben. Die
+                    Schokoladenform für 15 Minuten ins Gefrierfach legen,
+                    damit die erste Schicht aushärten kann. Die
+                    Kadayif-Teigfäden in einer Pfanne mit etwas Butter
+                    goldbraun rösten. Dabei ständig umrühren, damit sie
+                    nicht verbrennen. Die Pistaziencreme dazugeben und
+                    nochmal gut durch rühren. Nun die gerösteten
+                    Pistazien-Kadayif-Teigfäden in der Form verteilen und
+                    gleichmäßig darüber streichen. Die restliche Schokolade
+                    darüber gießen und glatt streichen. Die Schokolade für
+                    mindestens 3 Stunden im Kühlschrank fest werden lassen.
+                    Die Schokolade aus der Form lösen und in Stücke
+                    schneiden. Schmeckt super lecker!
+                </p>
+            </div>
+        </section>
+        <section class="author-section">
+            <h3>Rezept erstellt von</h3>
+            <div class="author-info-container">
+                <div class="author-profile-img">
+                    <img src="./assets/img/profile.png" alt="Profilbild" />
                 </div>
-            </section>
-        </main>
-        <footer>
-            <div class="footer-img-container">
-                <a href="#start"
-                    ><img
-                        class="footer-logo"
-                        src="./assets/img/logo.png"
-                        alt="Kochwelt-Logo"
-                /></a>
+                <div class="author-name">
+                    <span>Lina Cetinkaya</span>
+                </div>
             </div>
-            <div class="footer-link-container">
-                <a
-                    class="footer-link"
-                    target="_blank"
-                    href="https://www.facebook.com"
-                    ><img
-                        id="facebook-img"
-                        class="footer-link-img"
-                        src="./assets/img/socialmediaLinks/footer_facebook.png"
-                        alt="Facebook-Logo"
-                /></a>
-                <a
-                    class="footer-link"
-                    target="_blank"
-                    href="https://www.instagram.com"
-                    ><img
-                        id="insta-img"
-                        class="footer-link-img"
-                        src="./assets/img/socialmediaLinks/footer_instagram.png"
-                        alt="Instagram-Logo"
-                /></a>
-                <a class="footer-link" target="_blank" href="https://x.com"
-                    ><img
-                        id="twitter-img"
-                        class="footer-link-img"
-                        src="./assets/img/socialmediaLinks/footer_twitter.png"
-                        alt="Twitter-Logo"
-                /></a>
-            </div>
-        </footer>
-    </body>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-img-container">
+            <a href="#start"><img class="footer-logo" src="./assets/img/logo.png" alt="Kochwelt-Logo" /></a>
+        </div>
+        <div class="footer-link-container">
+            <a class="footer-link" target="_blank" href="https://www.facebook.com"><img id="facebook-img"
+                    class="footer-link-img" src="./assets/img/socialmediaLinks/footer_facebook.png"
+                    alt="Facebook-Logo" /></a>
+            <a class="footer-link" target="_blank" href="https://www.instagram.com"><img id="insta-img"
+                    class="footer-link-img" src="./assets/img/socialmediaLinks/footer_instagram.png"
+                    alt="Instagram-Logo" /></a>
+            <a class="footer-link" target="_blank" href="https://x.com"><img id="twitter-img" class="footer-link-img"
+                    src="./assets/img/socialmediaLinks/footer_twitter.png" alt="Twitter-Logo" /></a>
+        </div>
+    </footer>
+</body>
+
 </html>
