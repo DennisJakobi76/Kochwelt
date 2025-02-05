@@ -1,0 +1,13 @@
+* {
+    --button-background-and-linkHover-color: rgba(0, 128, 0);
+    --button-hover-background-color: rgb(6, 143, 6);
+    --color-white: white;
+    --color-black: black;
+    --box-shadow-color: rgba(0, 0, 0, 0.3);
+    --footer-background-color: rgba(64, 59, 59);
+    --footer-linkHover-dropshadow-color: #ffff;
+    --form-background-color: rgba(220, 220, 220);
+    --table-background-color: rgba(239, 239, 239);
+    --author-name-color: rgb(122, 119, 119);
+    --portion-input-border-color: rgba(0, 0, 0, 0.1);
+}

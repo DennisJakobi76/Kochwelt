@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
+        <title>Kochwelt</title>
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="./assets/img/logo_small.png"
+        />
+        <script src="./shared/scripts/responsive_menu.js" defer></script>
+        <script src="./scripts/main.js" defer></script>
+        <script src="./scripts/contact.js" defer></script>
+        <link rel="stylesheet" href="./shared/styles/color.css" />
+        <link rel="stylesheet" href="./styles/contact.css" />
+        <link rel="stylesheet" href="./shared/styles/style.css" />
+        <link rel="stylesheet" href="./shared/styles/responsive.css" />
+    </head>
+    <body>
+        <header id="start">
+            <div class="top-logo-div">
+                <a href="#start"
+                    ><img src="./assets/img/logo.png" alt="Kochwelt-Logo"
+                /></a>
+            </div>
+            <nav>
+                <a href="./index.html" class="nav-link">Start</a>
+                <a
+                    href="./recipe_dubai_chocolate.html"
+                    class="nav-link nav-link-recipe-of-the-day"
+                    >Rezept des Tages</a
+                >
+                <a href="./contact.html" class="nav-link youAreHere">Kontakt</a>
+                <a href="./impressum.html" class="nav-link">Impressum</a>
+            </nav>
+            <div
+                id="burger-icon-btn"
+                class="burgerbutton_clickable d_none"
+                onclick="toggleElement()"
+            >
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div
+                id="responsive-nav-links"
+                class="burger-nav-links burger-nav-links-closed"
+            >
+                <a href="./index.html" class="nav-link">Start</a>
+                <a
+                    href="./recipe_dubai_chocolate.html"
+                    class="nav-link responsive-nav-link-recipe-of-the-day"
+                    >Rezept des Tages</a
+                >
+                <a href="./contact.html" class="nav-link youAreHere">Kontakt</a>
+                <a href="./impressum.html" class="nav-link">Impressum</a>
+            </div>
+        </header>
+        <main id="form-main-content" class="main-content">
+            <form class="form-container" onsubmit="sendMail(event)">
+                <h2>Kontaktiere uns</h2>
+                <div class="contact-parts-container">
+                    <label for="input-field-name">Dein Name:</label>
+                    <input
+                        type="text"
+                        id="input-field-name"
+                        class="form-paragraph"
+                        name="Absender-Name"
+                        required
+                    />
+                </div>
+                <div class="contact-parts-container">
+                    <label for="input-field-mail">Dein E-Mail:</label>
+                    <input
+                        type="text"
+                        id="input-field-mail"
+                        class="form-paragraph"
+                        name="Absender-Email"
+                        required
+                    />
+                </div>
+                <div class="contact-parts-container">
+                    <label for="input-field-message">Dein Nachricht:</label>
+                    <textarea
+                        rows="20"
+                        cols="30"
+                        id="input-field-message"
+                        class="form-paragraph"
+                        name="Nachricht"
+                        required
+                    ></textarea>
+                </div>
+                <div class="submit-btn-container">
+                    <button
+                        type="submit"
+                        name="submit-btn"
+                        id="submit-btn"
+                        class="button"
+                    >
+                        Abschicken
+                    </button>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <div class="footer-img-container">
+                <a href="#start"
+                    ><img
+                        class="footer-logo"
+                        src="./assets/img/logo.png"
+                        alt="Kochwelt-Logo"
+                /></a>
+            </div>
+            <div class="footer-link-container">
+                <a
+                    class="footer-link"
+                    target="_blank"
+                    href="https://www.facebook.com"
+                    ><img
+                        id="facebook-img"
+                        class="footer-link-img"
+                        src="./assets/img/socialmediaLinks/footer_facebook.png"
+                        alt="Facebook-Logo"
+                /></a>
+                <a
+                    class="footer-link"
+                    target="_blank"
+                    href="https://www.instagram.com"
+                    ><img
+                        id="insta-img"
+                        class="footer-link-img"
+                        src="./assets/img/socialmediaLinks/footer_instagram.png"
+                        alt="Instagram-Logo"
+                /></a>
+                <a class="footer-link" target="_blank" href="https://x.com"
+                    ><img
+                        id="twitter-img"
+                        class="footer-link-img"
+                        src="./assets/img/socialmediaLinks/footer_twitter.png"
+                        alt="Twitter-Logo"
+                /></a>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
+        <title>Kochwelt</title>
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="./assets/img/logo_small.png"
+        />
+        <link rel="stylesheet" href="./shared/styles/color.css" />
+        <link rel="stylesheet" href="./styles/index.css" />
+        <link rel="stylesheet" href="./shared/styles/style.css" />
+        <link rel="stylesheet" href="./shared/styles/responsive.css" />
+        <script src="./shared/scripts/responsive_menu.js" defer></script>
+        <script src="./scripts/main.js" defer></script>
+    </head>
+    <body>
+        <header id="start">
+            <div class="top-logo-div">
+                <a href="#start"
+                    ><img src="./assets/img/logo.png" alt="Kochwelt-Logo"
+                /></a>
+            </div>
+            <nav>
+                <a href="./index.html" class="nav-link youAreHere">Start</a>
+                <a
+                    href="./recipe_dubai_chocolate.html"
+                    class="nav-link nav-link-recipe-of-the-day"
+                    >Rezept des Tages</a
+                >
+                <a href="./contact.html" class="nav-link">Kontakt</a>
+                <a href="./impressum.html" class="nav-link">Impressum</a>
+            </nav>
+            <div
+                id="burger-icon-btn"
+                class="burgerbutton_clickable d_none"
+                onclick="toggleElement()"
+            >
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div
+                id="responsive-nav-links"
+                class="burger-nav-links burger-nav-links-closed"
+            >
+                <a href="./index.html" class="nav-link youAreHere">Start</a>
+                <a
+                    href="./recipe_dubai_chocolate.html"
+                    class="nav-link responsive-nav-link-recipe-of-the-day"
+                    >Rezept des Tages</a
+                >
+                <a href="./contact.html" class="nav-link">Kontakt</a>
+                <a href="./impressum.html" class="nav-link">Impressum</a>
+            </div>
+        </header>
+        <main class="main-content">
+            <section class="aot-section">
+                <div class="aot-img-container">
+                    <img
+                        id="aot-preview-img"
+                        src="./assets/img/dubai_schokolade.jpg"
+                        alt="Foto von Dubai-Schokolade"
+                    />
+                </div>
+                <div class="aot-description-and-button-container">
+                    <div class="aot-description-container">
+                        <h2 id="aot-preview-headline">Dubai-Schokolade</h2>
+                        <p id="aot-preview-text">
+                            Die berühmte Dubai-Schokolade ist ein luxuriöses
+                            Dessert, das die Sinne verzaubert und die exquisite
+                            Handwerkskunst der Region widerspiegelt. Bekannt für
+                            ihre reichhaltige, cremige Textur und den intensiven
+                            Geschmack, wird sie oft mit hochwertigen Zutaten wie
+                            feinstem Kakao und verführerischen Gewürzen wie
+                            Safran und Kardamom verfeinert. Diese Schokolade
+                            wird häufig in kunstvoll gestalteten Pralinen oder
+                            als Topping für Desserts serviert und ist eine
+                            beliebte Wahl für Geschenke und Souvenirs. In Dubai
+                            finden sich zahlreiche Chocolatiers, die innovative
+                            Geschmacksrichtungen und einzigartige Designs
+                            kreieren, die das kulinarische Erbe der Stadt
+                            verkörpern. Ein Stück dieser köstlichen
+                            Dubai-Schokolade ist nicht nur ein Genuss, sondern
+                            auch ein einmaliges Erlebnis, das die Vielfalt und
+                            den Reichtum der arabischen Küche feiert.
+                        </p>
+                    </div>
+                    <div class="aot-button-container">
+                        <a
+                            id="aot-open-recipe-btn"
+                            href="./recipe_dubai_chocolate.html"
+                            ><input
+                                type="button"
+                                class="button"
+                                value="Rezept öffnen"
+                        /></a>
+                    </div>
+                </div>
+            </section>
+            <section class="recipe-preview-section">
+                <h2>Lust auf was Neues?</h2>
+                <div class="recipe-preview-container">
+                    <div
+                        class="recipe-img-and-title-container"
+                        onclick="getRecipeOfTheDay(1)"
+                    >
+                        <img
+                            class="index-small-img"
+                            src="./assets/img/mett.jpg"
+                            alt="Foto von Brötchen mit veganem Mett"
+                        />
+                        <h3>Veganes Mett</h3>
+                    </div>
+                    <div
+                        class="recipe-img-and-title-container"
+                        onclick="getRecipeOfTheDay(2)"
+                    >
+                        <img
+                            class="index-small-img"
+                            src="./assets/img/dubai_schokolade.jpg"
+                            alt="Foto von Dubai-Schokolade"
+                        />
+                        <h3>Dubai-Schokolade</h3>
+                    </div>
+                    <div
+                        class="recipe-img-and-title-container"
+                        onclick="getRecipeOfTheDay(3)"
+                    >
+                        <img
+                            class="index-small-img"
+                            src="./assets/img/rote-linsen-curry-mit-suesskartoffeln.png"
+                            alt="Foto von rote Linsen Curry"
+                        />
+                        <h3>Rote Linsen Curry</h3>
+                    </div>
+                </div>
+            </section>
+            <section class="compare-section">
+                <h2>Olivenöl vs. Rapsöl - Was ist besser?</h2>
+                <div class="compare-text-and-img-container">
+                    <p>
+                        <span> <b>Olivenöl:</b></span> Olivenöl wird aus den
+                        Früchten des Olivenbaums (Olea europaea) gewonnen und
+                        ist in verschiedenen Qualitäten erhältlich, wobei extra
+                        vergine das höchste Qualitätssiegel trägt und aus kaltem
+                        Pressen der Oliven ohne Chemikalien hergestellt wird. Es
+                        ist bekannt für seinen ausgeprägten, charakteristischen
+                        Geschmack, der je nach Olivensorte und Anbauregion von
+                        fruchtig bis nussig variieren kann; dadurch eignet es
+                        sich hervorragend für Salatdressings, Marinaden und als
+                        finishing Öl, das den Gerichten eine zusätzliche
+                        Geschmacksnote verleiht. Darüber hinaus enthält Olivenöl
+                        eine hohe Konzentration an einfach ungesättigten
+                        Fettsäuren und gesundheitsfördernden Antioxidantien, die
+                        entzündungshemmende Eigenschaften aufweisen und somit
+                        zur Unterstützung einer gesunden Ernährung beitragen.
+                        <br /><br />
+                        <span><b>Rapsöl:</b></span> Rapsöl wird aus den Samen
+                        der Raps-Pflanze (Brassica napus) gewonnen und ist eines
+                        der am häufigsten verwendeten Pflanzenöle, das sich
+                        durch seinen neutralen Geschmack und hohen Rauchpunkt
+                        auszeichnet, was es ideal für vielfältige Kochmethoden
+                        macht, einschließlich Braten, Backen und Frittieren. Das
+                        Öl enthält eine ausgewogene Mischung aus ungesättigten
+                        Fettsäuren, darunter sowohl mehrfach ungesättigte als
+                        auch einfach ungesättigte, was es zu einer gesunden
+                        Option für die tägliche Ernährung macht, da es hilft,
+                        das Cholesterin im Blut zu regulieren. Außerdem wird
+                        Rapsöl häufig raffiniert, um Schadstoffe zu entfernen
+                        und die Haltbarkeit zu verlängern, was es zu einer
+                        praktischen Wahl für den modernen Haushalt macht, jedoch
+                        führt dieser Prozess oft dazu, dass antiseptische
+                        Eigenschaften verloren gehen.
+                    </p>
+                    <img
+                        class="index-small-img"
+                        src="./assets/img/olive-oil.jpg"
+                        alt="Foto von Olivenöl"
+                    />
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-img-container">
+                <a href="#start"
+                    ><img
+                        class="footer-logo"
+                        src="./assets/img/logo.png"
+                        alt="Kochwelt-Logo"
+                /></a>
+            </div>
+            <div class="footer-link-container">
+                <a
+                    class="footer-link"
+                    target="_blank"
+                    href="https://www.facebook.com"
+                    ><img
+                        id="facebook-img"
+                        class="footer-link-img"
+                        src="./assets/img/socialmediaLinks/footer_facebook.png"
+                        alt="Facebook-Logo"
+                /></a>
+                <a
+                    class="footer-link"
+                    target="_blank"
+                    href="https://www.instagram.com"
+                    ><img
+                        id="insta-img"
+                        class="footer-link-img"
+                        src="./assets/img/socialmediaLinks/footer_instagram.png"
+                        alt="Instagram-Logo"
+                /></a>
+                <a class="footer-link" target="_blank" href="https://x.com"
+                    ><img
+                        id="twitter-img"
+                        class="footer-link-img"
+                        src="./assets/img/socialmediaLinks/footer_twitter.png"
+                        alt="Twitter-Logo"
+                /></a>
+            </div>
+        </footer>
+    </body>
+</html>

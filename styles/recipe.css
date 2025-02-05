@@ -1,0 +1,114 @@
+.preview-img {
+    width: 100%;
+    height: 380px;
+    border-radius: 15px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.info-section {
+    margin-top: 16px;
+    display: flex;
+    height: 128px;
+    box-shadow: 0 4px 4px -4px var(--box-shadow-color);
+}
+
+.info-icon {
+    width: 16px;
+    height: auto;
+    margin-right: 8px;
+}
+
+.info-container {
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--table-background-color);
+    border-radius: 5px;
+    margin-right: 32px;
+    padding: 8px;
+    margin-top: 16px;
+}
+
+.ingredients-and-calculator-section {
+    margin-top: 8px;
+}
+
+.calc-container {
+    display: flex;
+    align-items: center;
+}
+
+#count-portion-input {
+    height: 48px;
+    margin-right: -6px;
+    padding-left: 4px;
+    border-collapse: collapse;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: var(--portion-input-border-color);
+}
+
+.ingredients-table-container {
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 20px;
+    margin-top: 8px;
+}
+
+tr {
+    height: 32px;
+}
+tr td:nth-child(2) {
+    width: 1%;
+    white-space: nowrap;
+}
+
+td:nth-child(1) {
+    border-radius: 5px 0 0 5px;
+    text-align: right;
+    width: 1%;
+    white-space: nowrap;
+    padding-left: 16px;
+}
+
+td:nth-child(3) {
+    border-radius: 0 5px 5px 0;
+}
+
+tr:nth-child(odd) {
+    background-color: var(--table-background-color);
+}
+
+.preparation-info-section {
+    display: flex;
+}
+
+.preparation-container h2 {
+    margin-block-end: 0;
+}
+
+.author-info-container {
+    display: flex;
+}
+
+.author-profile-img img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.author-name {
+    display: flex;
+    padding-left: 32px;
+    align-items: center;
+    font-size: 30px;
+    color: var(--author-name-color);
+}

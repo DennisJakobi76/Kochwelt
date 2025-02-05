@@ -1,0 +1,34 @@
+#confirm-dialog {
+    width: 280px;
+    border-radius: 20px;
+    border: 16px solid var(--form-background-color);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 8px;
+}
+
+#confirm-dialog p {
+    background-color: var(--color-white);
+    border-radius: 20px;
+    height: 32px;
+    text-align: center;
+}
+
+#dialog-close-btn {
+    font-weight: 600;
+    font-size: 20px;
+    border: 2px solid var(--form-background-color);
+    border-radius: 50%;
+    background-color: var(--color-white);
+    color: var(--form-background-color);
+}
+
+#send-mail-main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,45 @@
+#form-main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    background-color: var(--form-background-color);
+    height: auto;
+    width: 600px;
+    border-radius: 20px;
+    padding: 8px 32px;
+}
+
+.form-paragraph {
+    background-color: var(--color-white);
+    width: 100%;
+    height: auto;
+    border: 0;
+    border-radius: 8px;
+    padding: 2px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.contact-parts-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact-parts-container input {
+    height: 32px;
+}
+
+.submit-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit-btn-container button {
+    border-radius: 8px;
+}

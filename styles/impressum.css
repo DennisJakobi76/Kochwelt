@@ -1,0 +1,4 @@
+.form-container {
+    background-color: var(--form-background-color);
+    padding: 32px;
+}
